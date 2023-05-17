@@ -11,6 +11,7 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
     }
 
     /* Global styles */
@@ -29,6 +30,7 @@
       background-color: #333;
       color: #fff;
       text-align: center;
+      padding-bottom: 30px;
     }
 
     /* Navigation styles */
@@ -53,6 +55,11 @@
       text-decoration: none;
       color: #333;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #666;
     }
 
     /* Main content styles */
@@ -61,11 +68,16 @@
       border: 1px solid #ccc;
       border-radius: 5px;
       margin-top: 20px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     }
 
     /* About section styles */
     #about {
       padding-top: 40px;
+    }
+
+    #about p {
+      line-height: 1.6;
     }
 
     /* Skills section styles */
@@ -89,12 +101,29 @@
       padding-top: 40px;
     }
 
+    #contact p {
+      margin-bottom: 10px;
+    }
+
+    #contact .contact-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    #contact .contact-info img {
+      width: 20px;
+      height: 20px;
+    }
+
     /* Footer styles */
     footer {
       background-color: #333;
       color: #fff;
       text-align: center;
       font-size: 14px;
+      padding: 10px;
     }
 
     footer p {
@@ -145,8 +174,14 @@
     <section id="contact">
       <h2>Contact Me</h2>
       <p>Provide your contact information so that interested visitors can get in touch with you.</p>
-      <p>Email: your-email@example.com</p>
-      <p>Phone: (123) 456-7890</p>
+      <div class="contact-info">
+        <img src="email.png" alt="Email">
+        <p>Email: your-email@example.com</p>
+      </div>
+      <div class="contact-info">
+        <img src="phone.png" alt="Phone">
+        <p>Phone: (123) 456-7890</p>
+      </div>
     </section>
   </main>
 
