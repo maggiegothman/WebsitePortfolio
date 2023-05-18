@@ -8,6 +8,13 @@
   <style>
     /* Reset some default styles */
     body {
+    background-color: lightblue;
+  }
+
+<body>
+  <!-- Your existing HTML code here -->
+</body>
+
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
@@ -154,7 +161,13 @@
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>Write a brief introduction about yourself and your passion for volleyball.</p>
+      <p>I'm a high school freshman, 14 years old, and I have a passion for volleyball.
+        During the winter, I participate in club volleyball, honing my skills and competing with other dedicated players.
+        In the fall, I proudly represent my high school on the volleyball team.
+        As a libero, I bring my defensive prowess to the court, strategically passing and digging to keep the game alive.
+        I love the thrill of the game, the camaraderie of my teammates, and the challenge of constantly improving my skills.
+        Volleyball has taught me discipline, teamwork, and resilience, and I'm always eager to embrace new opportunities and face new opponents.
+      </p>
     </section>
 
     <section id="skills">
@@ -170,29 +183,28 @@
       </ul>
     </section>
     
-<section id="gallery">
-  <h2>Photo Gallery</h2>
-  <p>Add a collection of photos showcasing your volleyball skills and memorable moments.</p>
-  <img src="https://github.com/maggiegothman/WebsitePortfolio/blob/main/istockphoto-1305166860-612x612.jpg?raw=true">
-</section>
 <style>
-  .small-image {
-    width: 300px;
-    height: 200px;
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .image-container img {
+    max-width: calc(33.33% - 10px);
+    height: auto;
   }
 </style>
 
 <section id="gallery">
   <h2>Photo Gallery</h2>
   <p>Add a collection of photos showcasing your volleyball skills and memorable moments.</p>
-  <img src="path/to/your/image.jpg" alt="Description of the image" class="small-image">
+  <div class="image-container">
+    <img src="https://github.com/maggiegothman/WebsitePortfolio/blob/main/istockphoto-1305166860-612x612-removebg-preview.png?raw=true">
+    <img src="https://github.com/maggiegothman/WebsitePortfolio/blob/main/istockphoto-1305166860-612x612-removebg-preview.png?raw=true">
+    <img src="https://github.com/maggiegothman/WebsitePortfolio/blob/main/istockphoto-1305166860-612x612-removebg-preview.png?raw=true">
+  </div>
 </section>
 
-    <section id="gallery">
-      <h2>Photo Gallery</h2>
-      <p>Add a collection of photos showcasing your volleyball skills and memorable moments.</p>
-      <!-- Add your photo gallery here -->
-    </section>
 
     <section id="contact">
       <h2>Contact Me</h2>
